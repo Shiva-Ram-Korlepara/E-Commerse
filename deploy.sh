@@ -1,13 +1,13 @@
 #!/bin/bash
 
 git clone https://github.com/Shiva-Ram-Korlepara/E-Commerse.git
-cd e-commerse
+cd E-Commerse
 
-cd backend
+cd Backend
 npm install
 
 cd ../frontend
 npm install
 
-cd ../backend
+cd ../Backend
 node server.js
