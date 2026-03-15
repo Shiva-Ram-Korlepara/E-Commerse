@@ -1,0 +1,37 @@
+{
+  "info": {
+    "name": "E-Commerce API Tests",
+    "_postman_id": "1234-abcd-5678-efgh",
+    "description": "Test all admin, customer, and seller routes quickly",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Admin Routes",
+      "item": [
+        { "name": "Create Category", "request": { "method": "POST", "header": [], "url": { "raw": "http://localhost:3000/api/admin/categories", "protocol": "http", "host": ["localhost"], "port": "3000", "path": ["api", "admin", "categories"] } } },
+        { "name": "View All Customers", "request": { "method": "GET", "header": [], "url": "http://localhost:3000/api/admin/customers" } },
+        { "name": "View All Sellers", "request": { "method": "GET", "url": "http://localhost:3000/api/admin/sellers" } },
+        { "name": "View All Orders", "request": { "method": "GET", "url": "http://localhost:3000/api/admin/orders" } }
+      ]
+    },
+    {
+      "name": "Customer Routes",
+      "item": [
+        { "name": "Customer Signup", "request": { "method": "POST", "url": "http://localhost:3000/api/customer/signup" } },
+        { "name": "Get Profile", "request": { "method": "GET", "url": "http://localhost:3000/api/customer/profile" } },
+        { "name": "Get Products", "request": { "method": "GET", "url": "http://localhost:3000/api/customer/products" } },
+        { "name": "Create Order", "request": { "method": "POST", "url": "http://localhost:3000/api/customer/orders" } }
+      ]
+    },
+    {
+      "name": "Seller Routes",
+      "item": [
+        { "name": "Seller Signup", "request": { "method": "POST", "url": "http://localhost:3000/api/seller/signup" } },
+        { "name": "Get Seller Products", "request": { "method": "GET", "url": "http://localhost:3000/api/seller/products" } },
+        { "name": "Create Product", "request": { "method": "POST", "url": "http://localhost:3000/api/seller/products" } },
+        { "name": "Get Seller Orders", "request": { "method": "GET", "url": "http://localhost:3000/api/seller/orders" } }
+      ]
+    }
+  ]
+}
